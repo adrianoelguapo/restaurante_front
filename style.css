@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Twinkle+Star&display=swap');
 
 /* --- Estilos generales --- */
-body{
+body {
     margin: 0;
     font-family: "Red Hat Text", serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
 }
 
 /* --- Header --- */
-header{
+header {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     place-items: center;
@@ -20,44 +20,56 @@ header{
     border-bottom: solid 1px gray;
 }
 
-.header-title{
+.header-title {
     font-size: 25px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-nav{
+nav {
     display: flex;
     width: 90%;
     justify-content: space-around;
 }
 
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: white;
     font-variant: small-caps;
     transition: all 0.2s;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #AE9062;
     transform: scale(1.1);
     border-bottom: solid 1px #AE9062;
 }
 
-.nav-link-active{
+.nav-link-active {
     text-decoration: underline;
     color: #AE9062;
     font-variant: small-caps;
     transition: all 0.2s;
 }
 
-.nav-link-active:hover{
+.nav-link-active:hover {
     transform: scale(1.1);
 }
 
+.logout-button{
+    font-variant: small-caps;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logout-button:hover {
+    transform: scale(1.1);
+    color: #AE9062;
+    border-bottom: solid 1px #AE9062;
+}
+
 /* --- Footer --- */
-footer{
+footer {
     text-align: center;
     background-color: rgb(18, 18, 18);
     color: white;
@@ -69,7 +81,7 @@ footer{
 }
 
 /* --- Home (Main) --- */
-.home-main{
+.home-main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,7 +91,7 @@ footer{
     padding-bottom: 12.5%;
 }
 
-.home-main-welcome{
+.home-main-welcome {
     color: #AE9062;
     font-family: "Twinkle Star", serif;
     font-optical-sizing: auto;
@@ -89,7 +101,7 @@ footer{
     margin-bottom: -2%;
 }
 
-.home-main-title{
+.home-main-title {
     color: #AE9062;
     font-weight: bold;
     font-size: 50px;
@@ -97,14 +109,14 @@ footer{
     text-align: center;
 }
 
-.home-main-desc{
+.home-main-desc {
     color: white;
     font-weight: 300;
     width: 40%;
     text-align: center;
 }
 
-.home-main-button{
+.home-main-button {
     background: none;
     color: white;
     font-family: "Red Hat Text", serif;
@@ -116,13 +128,13 @@ footer{
     border-radius: 3px;
 }
 
-.home-main-button:hover{
+.home-main-button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 9px #8f8f8f;
 }
 
 /* --- Home (section) --- */
-.home-section{
+.home-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +142,7 @@ footer{
     border-top: solid 1px gray;
 }
 
-.home-section-welcome{
+.home-section-welcome {
     margin-top: 2.5%;
     font-family: "Twinkle Star", serif;
     font-size: 22px;
@@ -138,13 +150,13 @@ footer{
     margin-bottom: -1.5%;
 }
 
-.home-section-title{
+.home-section-title {
     color: #AE9062;
     font-weight: bold;
     font-size: 40px;
 }
 
-.home-section-cards{
+.home-section-cards {
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -152,7 +164,7 @@ footer{
     margin-bottom: 2%;
 }
 
-.home-section-card{
+.home-section-card {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -162,18 +174,18 @@ footer{
     padding-bottom: 5%;
 }
 
-.home-section-card a{
+.home-section-card a {
     width: 50%;
     text-decoration: none;
 }
 
-.home-section-card-welcome{
+.home-section-card-welcome {
     font-family: "Twinkle Star", serif;
     font-size: 25px;
     color: #AE9062;
 }
 
-.home-section-card-title{
+.home-section-card-title {
     color: #AE9062;
     font-weight: bold;
     font-size: 35px;
@@ -182,14 +194,14 @@ footer{
     margin-top: -2%;
 }
 
-.home-section-card-desc{
+.home-section-card-desc {
     color: white;
     font-weight: 300;
     text-align: center;
     width: 80%;
 }
 
-.home-section-card-button{
+.home-section-card-button {
     background: none;
     color: white;
     font-family: "Red Hat Text", serif;
@@ -202,114 +214,90 @@ footer{
     width: 100%;
 }
 
-.home-section-card-button:hover{
+.home-section-card-button:hover {
     transform: scale(1.1);
     box-shadow: 0 0 9px #8f8f8f;
 }
 
-#home-section-card-2{
+#home-section-card-2 {
     background-color: #242424;
 }
 
-#home-section-card-1{
+#home-section-card-1 {
     background-image: url("images/img2.jpg");
     background-size: cover;
 }
 
-#home-section-card-3{
+#home-section-card-3 {
     background-image: url("images/img3.jpg");
     background-size: cover;
 }
 
-/* --- About Us ---*/
-.about-main{
+/* --- About Us --- */
+.about-main {
     padding: 5% 10%;
     background-color: #242424;
     color: white;
     text-align: center;
 }
 
-.about-main h1{
+.about-main h1 {
     font-size: 50px;
     color: #AE9062;
     margin-top: -2.5%;
 }
 
-.visual-section{
+.visual-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem; /* 40px / 16 = 2.5rem */
 }
 
-.visual-section img{
+.visual-section img {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0.625rem; /* 10px / 16 = 0.625rem */
     box-shadow: 0 0 9px #8f8f8f;
 }
 
-.visual-text{
+.visual-text {
     max-width: 600px;
-    margin: 10px;
+    margin: 0.625rem; /* 10px / 16 = 0.625rem */
     text-align: left;
 }
 
-.visual-text h2{
+.visual-text h2 {
     font-size: 40px;
     color: #AE9062;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem; /* 10px / 16 = 0.625rem */
 }
 
-.visual-text p{
+.visual-text p {
     font-size: 18px;
     line-height: 1.6;
 }
 
 /* --- Login (index.html) --- */
-.login-container{
+.login-container {
     display: flex;
     width: 100%;
     height: 100vh;
 }
 
-.login-img-container{
+.login-img-container {
     width: 65%;
     height: 100%;
 }
 
-.login-img-container img{
+.login-img-container img {
     width: 100%;
     height: 100%;
 }
 
-.login-form-container{
-    background-color: rgb(18, 18, 18);
-    height: 100%;
-    width: 35%;
-}
-
-/* --- Login (index.html) --- */
-.login-container{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-}
-
-.login-img-container{
-    width: 65%;
-    height: 100%;
-    border-right: solid 1px rgb(67, 66, 66);
-}
-
-.login-img-container img{
-    width: 100%;
-    height: 100%;
-}
-
-.login-form-container{
+.login-form-container {
     background-color: rgb(18, 18, 18);
     height: 100%;
     width: 35%;
@@ -318,10 +306,11 @@ footer{
     align-items: center;
 }
 
+/* --- Estilos para el formulario de login --- */
 .login-form {
     width: 80%;
     background-color: #121212;
-    padding: 30px;
+    padding: 1.875rem; /* 30px / 16 = 1.875rem */
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -329,30 +318,31 @@ footer{
     color: white;
 }
 
-.login-form h1{
+.login-form h1 {
     font-size: 40px;
 }
 
 .login-form h2 {
-    font-family: "Red Hat Text", serif;
-    margin-bottom: 20px;
+    font-family: "Twinkle Star", serif;
+    letter-spacing: 2px;
+    margin-bottom: 1.25rem; /* 20px / 16 = 1.25rem */
     color: #AE9062;
 }
 
 .input-group {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem; /* 15px / 16 ≈ 0.94rem */
 }
 
 .input-group label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem; /* 5px / 16 = 0.3125rem */
     font-size: 14px;
 }
 
 .input-group input {
     width: 95%;
-    padding: 10px;
+    padding: 0.625rem; /* 10px / 16 = 0.625rem */
     border: 1px solid #555;
     border-radius: 3px;
     font-size: 16px;
@@ -371,9 +361,9 @@ footer{
     background: none;
     color: white;
     font-family: "Red Hat Text", serif;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px 20px / 16 */
     border: solid 1px white;
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px / 16 */
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 3px;
@@ -387,7 +377,7 @@ footer{
 }
 
 .login-help {
-    margin-top: 10px;
+    margin-top: 0.625rem; /* 10px / 16 */
     font-size: 14px;
 }
 
