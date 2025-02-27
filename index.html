@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
 
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>Savory - Log In</title>
-        <link rel = "stylesheet" href = "style.css">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Savory - Log In</title>
+    <link rel = "stylesheet" href = "style.css">
 
-    </head>
+  </head>
 
-    <body>
+  <body>
 
-        <div class = "login-container">
+    <div class = "login-container">
 
-            <div class = "login-img-container">
+      <div class = "login-img-container">
 
-                <img src = "images/img6.jpg" alt = "login-page-image">
+        <img src = "images/img6.jpg" alt = "login-page-image">
 
-            </div>
+      </div>
 
-            <div class = "login-form-container">
+      <div class = "login-form-container">
 
-                <form class = "login-form">
+        <div id = "error-message" style = "display:none; color: red; margin-bottom: 1rem;"></div>
 
-                    <h1>SAVORY</h1>
+        <form class = "login-form" id = "login-form" method = "POST" action = "http://localhost:5000/api/login">
 
-                    <h2>Log In</h2>
-                    
-                    <div class = "input-group">
+          <h1>SAVORY</h1>
+          <h2>Log In</h2>
 
-                        <label for = "usuario">Username</label>
-                        <input type = "text" id = "login-username" name = "login-username" placeholder = "Enter your username">
+          <div class = "input-group">
 
-                    </div>
-                    
-                    <div class = "input-group">
+            <label for = "login-username">Username</label>
+            <input type = "text" id = "login-username" name = "login-username" placeholder = "Enter your username">
 
-                        <label for = "password">Password</label>
-                        <input type = "password" id = "login-password" name = "login-password" placeholder = "Enter your password">
+          </div>
 
-                    </div>
-                    
-                    <button type = "submit" class = "login-button">Log In</button>
-                    
-                    <p class = "login-help">Don't have an account? <a href = "sign-up.html">Sign Up</a></p>
+          <div class = "input-group">
 
-                </form>
+            <label for = "login-password">Password</label>
 
-            </div>
+            <input type = "password" id = "login-password" name = "login-password" placeholder = "Enter your password">
 
-        </div>
-        
-    </body>
+          </div>
+
+          <button type = "submit" class = "login-button">Log In</button>
+
+          <p class = "login-help">Don't have an account? <a href = "sign-up.html">Sign Up</a></p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "index.js"></script>
+
+  </body>
 
 </html>

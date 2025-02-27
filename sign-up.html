@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
 
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-        <title>Savory - Sign Up</title>
-        <link rel = "stylesheet" href = "style.css">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Savory - Sign Up</title>
+    <link rel = "stylesheet" href = "style.css">
 
-    </head>
+  </head>
 
-    <body>
+  <body>
 
-        <div class = "login-container">
+    <div class = "login-container">
 
-            <div class = "login-img-container">
+      <div class = "login-img-container">
 
-                <img src = "images/img6.jpg" alt = "login-page-image">
+        <img src = "images/img6.jpg" alt = "login-page-image">
 
-            </div>
+      </div>
 
-            <div class = "login-form-container">
+      <div class = "login-form-container">
 
-                <form class = "login-form">
-
-                    <h1>SAVORY</h1>
-
-                    <h2>Sign Up</h2>
-                    
-                    <div class = "input-group">
-
-                        <label for = "usuario">Username</label>
-                        <input type = "text" id = "signup-username" name = "signup-username" placeholder = "Enter your username">
-
-                    </div>
-                    
-                    <div class = "input-group">
-
-                        <label for = "password">Password</label>
-                        <input type = "password" id = "signup-password" name = "signup-password" placeholder = "Enter your password">
-
-                    </div>
-                    
-                    <button type = "submit" class = "signup-button">Sign Up</button>
-                    
-                    <p class = "login-help">Already have an account? <a href = "index.html">Log In</a></p>
-
-                </form>
-
-            </div>
-
-        </div>
+        <div id = "error-message" style = "display: none; color: red; margin-bottom: 1rem;"></div>
         
-    </body>
+        <form class = "login-form" id = "signup-form" method = "POST" action = "http://localhost:5000/api/signup">
+
+          <h1>SAVORY</h1>
+          <h2>Sign Up</h2>
+
+          <div class = "input-group">
+
+            <label for = "signup-username">Username</label>
+            <input type = "text" id = "signup-username" name = "signup-username" placeholder = "Enter your username">
+
+          </div>
+
+          <div class = "input-group">
+
+            <label for = "signup-password">Password</label>
+            <input type = "password" id = "signup-password" name = "signup-password" placeholder = "Enter your password">
+
+          </div>
+
+          <button type = "submit" class = "signup-button">Sign Up</button>
+
+          <p class = "login-help">Already have an account? <a href = "index.html">Log In</a></p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src = "sign-up.js"></script>
+
+  </body>
 
 </html>

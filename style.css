@@ -252,27 +252,27 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2.5rem; /* 40px / 16 = 2.5rem */
+    margin-bottom: 2.5rem;
 }
 
 .visual-section img {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-    margin: 0.625rem; /* 10px / 16 = 0.625rem */
+    margin: 0.625rem;
     box-shadow: 0 0 9px #8f8f8f;
 }
 
 .visual-text {
     max-width: 600px;
-    margin: 0.625rem; /* 10px / 16 = 0.625rem */
+    margin: 0.625rem;
     text-align: left;
 }
 
 .visual-text h2 {
     font-size: 40px;
     color: #AE9062;
-    margin-bottom: 0.625rem; /* 10px / 16 = 0.625rem */
+    margin-bottom: 0.625rem;
 }
 
 .visual-text p {
@@ -290,6 +290,7 @@ footer {
 .login-img-container {
     width: 65%;
     height: 100%;
+    border-right: solid 1px gray;
 }
 
 .login-img-container img {
@@ -306,11 +307,10 @@ footer {
     align-items: center;
 }
 
-/* --- Estilos para el formulario de login --- */
 .login-form {
     width: 80%;
     background-color: #121212;
-    padding: 1.875rem; /* 30px / 16 = 1.875rem */
+    padding: 1.875rem;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -325,24 +325,24 @@ footer {
 .login-form h2 {
     font-family: "Twinkle Star", serif;
     letter-spacing: 2px;
-    margin-bottom: 1.25rem; /* 20px / 16 = 1.25rem */
+    margin-bottom: 1.25rem;
     color: #AE9062;
 }
 
 .input-group {
     width: 100%;
-    margin-bottom: 0.9375rem; /* 15px / 16 ≈ 0.94rem */
+    margin-bottom: 0.9375rem;
 }
 
 .input-group label {
     display: block;
-    margin-bottom: 0.3125rem; /* 5px / 16 = 0.3125rem */
+    margin-bottom: 0.3125rem;
     font-size: 14px;
 }
 
 .input-group input {
     width: 95%;
-    padding: 0.625rem; /* 10px / 16 = 0.625rem */
+    padding: 0.625rem;
     border: 1px solid #555;
     border-radius: 3px;
     font-size: 16px;
@@ -361,9 +361,9 @@ footer {
     background: none;
     color: white;
     font-family: "Red Hat Text", serif;
-    padding: 0.625rem 1.25rem; /* 10px 20px / 16 */
+    padding: 0.625rem 1.25rem;
     border: solid 1px white;
-    margin-top: 0.625rem; /* 10px / 16 */
+    margin-top: 0.625rem;
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 3px;
@@ -371,13 +371,14 @@ footer {
     font-size: 16px;
 }
 
-.login-button:hover {
+.login-button:hover,
+.signup-button:hover {
     transform: scale(1.01);
     box-shadow: 0 0 9px #8f8f8f;
 }
 
 .login-help {
-    margin-top: 0.625rem; /* 10px / 16 */
+    margin-top: 0.625rem;
     font-size: 14px;
 }
 
