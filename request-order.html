@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Savory - Request Order</title>
+        <link rel = "stylesheet" href = "style.css">
+
+    </head>
+
+    <body>
+        
+        <header>
+
+            <p class = "header-title">Savory</p>
+
+            <nav>
+
+                <a class = "nav-link" href = "home.html">Home</a>
+                <a class = "nav-link-active" href = "request-order.html">Request Your Order</a>
+                <a class = "nav-link" href = "book-table.html">Book Your Table</a>
+                <a class = "nav-link" href = "about.html">About Us</a>
+
+            </nav>
+
+            <p class = "logout-button">Log Out</p>
+
+        </header>
+
+        <main class = "order-main">
+
+            <section class = "food-menu">
+
+                <!-- Aquí irá cada uno de los platos -->
+
+            </section>
+
+            <section class = "cart">
+
+                <h2>Your Order</h2>
+
+                <div id = "cart-items">
+
+                    <!-- Aquí se añadirán los platos al carrito -->
+
+                </div>
+
+                <p>Total: $<span id = "total-price">0.00</span></p>
+
+                <button class = "submit-order">Submit Order</button>
+                <button class = "clear-cart">Clear Order</button>
+                
+            </section>
+
+        </main>
+
+        <footer>Savory 2025 ©. All rights reserved.</footer>
+
+        <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src = "logout.js"></script>
+        <script src = "request-order.js"></script>
+
+    </body>
+
+</html>
