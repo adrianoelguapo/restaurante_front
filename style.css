@@ -584,3 +584,110 @@ footer {
     color: #AE9062;
     border: solid 1px #AE9062;
 }
+
+/* --- admin.html --- */
+.admin-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+    min-height: 80vh;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+  }
+  
+.admin-welcome{
+    text-align: center;
+    background-color: #242424;
+    padding: 2rem;
+    border: 1px solid #555;
+    border-radius: 8px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.admin-welcome h1{
+    color: #AE9062;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.admin-welcome p{
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/* --- order-requests.html --- */
+.order-requests-main{
+    padding: 2rem;
+    background-color: #121212;
+    color: white;
+    min-height: 70vh;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+  
+.order-requests-main h1{
+    text-align: center;
+    color: #AE9062;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+#orders-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.order-card{
+    background-color: #242424;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 1.5rem;
+    width: 25%;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.order-card h2{
+    color: #AE9062;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.order-card p{
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.order-actions{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.order-actions button{
+    background: none;
+    color: white;
+    font-family: "Red Hat Text", serif;
+    padding: 0.5rem 1rem;
+    border: solid 1px white;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.order-actions button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 9px #AE9062;
+    color: #AE9062;
+    border: solid 1px #AE9062;
+}
