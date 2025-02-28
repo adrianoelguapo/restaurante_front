@@ -116,16 +116,23 @@ footer {
     text-align: center;
 }
 
+.home-main a{
+    width: 10%;
+    margin-top: 1%;
+    text-decoration: none;
+}
+
 .home-main-button {
     background: none;
     color: white;
     font-family: "Red Hat Text", serif;
-    padding: 0.75%;
+    padding: 5%;
     border: solid 1px white;
     margin-top: 1%;
     cursor: pointer;
     transition: all 0.3s;
     border-radius: 3px;
+    width: 100%;
 }
 
 .home-main-button:hover {
