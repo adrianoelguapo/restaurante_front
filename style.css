@@ -85,7 +85,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("images/img1.jpg");
+    background-image: url("https://restaurante-front-five.vercel.app/images/img1.jpg");
     background-size: cover;
     padding-top: 12.5%;
     padding-bottom: 12.5%;
@@ -231,12 +231,12 @@ footer {
 }
 
 #home-section-card-1 {
-    background-image: url("images/img2.jpg");
+    background-image: url("https://restaurante-front-five.vercel.app/images/img2.jpg");
     background-size: cover;
 }
 
 #home-section-card-3 {
-    background-image: url("images/img3.jpg");
+    background-image: url("https://restaurante-front-five.vercel.app/images/img3.jpg");
     background-size: cover;
 }
 

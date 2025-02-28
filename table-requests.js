@@ -10,14 +10,19 @@ $(document).ready(function() {
             data.forEach(function(request) {
                 let requestId = request._id;
                 let cardHtml = `
-                    <div class="order-card" data-id="${requestId}">
+                    <div class = "order-card" data-id = "${requestId}">
+
                         <h2>Request ID: ${requestId}</h2>
                         <p><strong>Client:</strong> ${request.nombresolicitante}</p>
                         <p><strong>Table Number:</strong> ${request.numeromesa}</p>
-                        <div class="order-actions">
-                            <button class="accept-order" data-id="${requestId}">Accept</button>
-                            <button class="reject-order" data-id="${requestId}">Reject</button>
+
+                        <div class = "order-actions">
+
+                            <button class = "accept-order" data-id = "${requestId}">Accept</button>
+                            <button class = "reject-order" data-id = "${requestId}">Reject</button>
+
                         </div>
+
                     </div>
                 `;
                 tablesContainer.append(cardHtml);
