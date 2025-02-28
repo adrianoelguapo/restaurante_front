@@ -57,7 +57,7 @@ $(document).ready(function() {
       };
     
       $.ajax({
-        url: 'https://restaurante-back-pi.vercel.app/api//order',
+        url: 'https://restaurante-back-pi.vercel.app/api/order',
         type: 'POST',
         contentType: 'application/json;charset=UTF-8',
         data: JSON.stringify(order),
