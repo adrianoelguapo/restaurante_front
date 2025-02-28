@@ -393,3 +393,118 @@ footer {
     text-decoration: underline;
     transform: scale(1.5);
 }
+
+/* --- Pedidos (request-order.html) --- */
+.order-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #121212;
+    color: white;
+}
+
+.food-menu{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.food-card{
+    background-color: #242424;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(33.333% - 1rem);
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.food-card h3{
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    color: #AE9062;
+}
+
+.food-card p{
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.food-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.7);
+}
+
+.food-card-button{
+    background: none;
+    color: white;
+    font-family: "Red Hat Text", serif;
+    padding: 2%;
+    border: solid 1px white;
+    margin-top: 1%;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 3px;
+    width: 50%;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.food-card-button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 9px #AE9062;
+    color: #AE9062;
+    border: solid 1px #AE9062;
+}
+
+.cart{
+    flex: 1;
+    padding: 1rem;
+    background-color: #242424;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-left: 1rem;
+    height: fit-content;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+  
+.cart h2{
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #AE9062;
+}
+
+.cart-item{
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.clear-cart,
+.submit-order{
+    background: none;
+    color: white;
+    font-family: "Red Hat Text", serif;
+    padding: 2%;
+    border: solid 1px white;
+    margin-top: 1%;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 3px;
+    width: 30%;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+.clear-cart:hover,
+.submit-order:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 9px #AE9062;
+    color: #AE9062;
+    border: solid 1px #AE9062;
+}
