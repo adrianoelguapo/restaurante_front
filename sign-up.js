@@ -13,7 +13,7 @@ $(document).ready(function() {
       }
 
       $.ajax({
-        url: 'https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/signup',
+        url: 'https://restaurante-back-pi.vercel.app/api//signup',
         type: 'POST',
         contentType: 'application/json;charset=UTF-8',
         data: JSON.stringify({

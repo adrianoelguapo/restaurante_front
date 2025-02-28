@@ -2,7 +2,7 @@ $(document).ready(function() {
     const mesasContainer = $(".mesas");
 
     $.ajax({
-        url: "https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/mesas",
+        url: "https://restaurante-back-pi.vercel.app/api/mesas",
         method: "GET",
         dataType: "json",
         success: function(mesas) {
@@ -10,11 +10,13 @@ $(document).ready(function() {
 
             mesas.forEach(mesa => {
                 let mesaElement = `
-                    <div class="mesa">
+                    <div class = "mesa">
+
                         <h2>Table ${mesa.numero}</h2>
-                        <p class="comensales">Comensales máximos: <span>${mesa.maxpeople}</span></p>
+                        <p class = "comensales">Comensales máximos: <span>${mesa.maxpeople}</span></p>
                         <p>Status: <span>${mesa.status ? "Libre" : "Ocupada"}</span></p>
-                        <button class="boton-reservar" data-id="${mesa._id}" data-numero="${mesa.numero}" ${!mesa.status ? "disabled" : ""}>Reservar</button>
+                        <button class = "boton-reservar" data-id = "${mesa._id}" data-numero = "${mesa.numero}" ${!mesa.status ? "disabled" : ""}>Reservar</button>
+                        
                     </div>
                 `;
                 mesasContainer.append(mesaElement);
@@ -46,7 +48,7 @@ $(document).on("click", ".boton-reservar", function() {
     console.log("Enviando reserva:", { nombresolicitante: nombreSolicitante, numeromesa: numeroMesa });
 
     $.ajax({
-        url: "https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/solicitar-mesa",
+        url: "https://restaurante-back-pi.vercel.app/api/solicitar-mesa",
         method: "POST",
         contentType: "application/json",
         data: JSON.stringify({

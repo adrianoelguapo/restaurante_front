@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: 'https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/table-requests',
+        url: 'https://restaurante-back-pi.vercel.app/api/table-requests',
         type: 'GET',
         dataType: 'json',
         success: function(data) {
@@ -33,7 +33,7 @@ $(document).ready(function() {
                 let action = $(this).hasClass('accept-order') ? "accepted" : "rejected";
 
                 $.ajax({
-                    url: 'https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/table-request/' + id,
+                    url: 'https://restaurante-back-pi.vercel.app/api/table-request/' + id,
                     type: 'DELETE',
                     success: function(response) {
                         alert("Request " + id + " " + action + " and removed.");
