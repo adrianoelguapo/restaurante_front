@@ -8,7 +8,7 @@ $(document).ready(function() {
       let password = $('#login-password').val();
 
       $.ajax({
-        url: 'http://localhost:5000/api/login',
+        url: 'https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/login',
         type: 'POST',
         contentType: 'application/json;charset=UTF-8',
         data: JSON.stringify({

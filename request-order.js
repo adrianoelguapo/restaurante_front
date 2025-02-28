@@ -3,7 +3,7 @@ $(document).ready(function() {
     let orderPlates = [];
     
     $.ajax({
-      url: 'http://localhost:5000/api/carta',
+      url: 'https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/carta',
       type: 'GET',
       dataType: 'json',
       success: function(data) {
@@ -57,7 +57,7 @@ $(document).ready(function() {
       };
     
       $.ajax({
-        url: 'http://localhost:5000/api/order',
+        url: 'https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/order',
         type: 'POST',
         contentType: 'application/json;charset=UTF-8',
         data: JSON.stringify(order),

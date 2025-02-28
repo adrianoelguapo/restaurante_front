@@ -2,7 +2,7 @@ $(document).ready(function() {
     const mesasContainer = $(".mesas");
 
     $.ajax({
-        url: "http://localhost:5000/api/mesas",
+        url: "https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/mesas",
         method: "GET",
         dataType: "json",
         success: function(mesas) {
@@ -46,7 +46,7 @@ $(document).on("click", ".boton-reservar", function() {
     console.log("Enviando reserva:", { nombresolicitante: nombreSolicitante, numeromesa: numeroMesa });
 
     $.ajax({
-        url: "http://localhost:5000/api/solicitar-mesa",
+        url: "https://restaurante-back-git-master-adrianoelguapos-projects.vercel.app/api/solicitar-mesa",
         method: "POST",
         contentType: "application/json",
         data: JSON.stringify({
